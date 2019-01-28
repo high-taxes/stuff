@@ -43,7 +43,7 @@ int main() {
 
     int i = 0;
 
-    do{//attempt at getting string from file and saving it to 2d array
+    do{//attempt at getting string from file and saving it to 2d array, last (known) thing to not work
     fgets(lines[i], lineLengths[i], fp);
     ++i;
     }while(!feof(fp));
