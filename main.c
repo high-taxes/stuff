@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include<stdlib.h>
-//streamline, make actual functions, plug into homework assignment
+//To do: streamline, make actual function calls, plug into homework assignment
 int main() {
 
     char newline;
