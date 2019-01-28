@@ -6,9 +6,9 @@ int main() {
     char newline;
     char ** lines;
     int numLines = 0;
-    int* lineLengths = (int*)malloc(2 * sizeof(int));
+    int* lineLengths = (int*)malloc(2 * sizeof(int));//arbitrary (maybe unneccessary?) initialization
     int curLine = 0;
-    lines = (char**)malloc(2 * sizeof(char*));
+    lines = (char**)malloc(2 * sizeof(char*));//same as above
 
     FILE* fp = fopen("whoa.txt", "r");
 
@@ -34,7 +34,7 @@ int main() {
     lines = realloc(lines, numLines * sizeof(char*));//allocation for 2d array: in this case rows
    
     for(int i = 0; i < numLines; i++){//for loop to check if the tracking array has the correct number of characters for each line
-    printf("The number of characters in line %d is %d\n", i+1, lineLengths[i]);
+    printf("The number of characters in line %d is %d\n", i+1, lineLengths[i]);//testing again
     lines[i]=realloc(lines[i], lineLengths[i]* sizeof(char));//allocates space for each individual line in the 2d array (each character)
     }
   
